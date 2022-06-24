@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <audio onratechange="updateRate()" onvolumechange="updateVol()" ontimeupdate="updateTime()" id="bg" loop preload="auto">
+        <source src="/audio/aftermath.mp3" type="audio/mpeg">
+    </audio>
+    <div class="container">
+   <div onclick="changeRate()" id="rateDiv"><h1 id="rateDisplay">Playback Rate:<br><span id="rateVal">1</span></h1></div>
+    <div onclick="changeVol()" id="volDiv"><h1 id="volDisplay">Volume:<br><span id="volVal">1</span></h1></div>
+    <div onclick="changeTime()" id="timeDiv"><h1 id="timeDisplay">Time:<br><span id="timeVal">0</span></h1></div> 
+</div>
+    <div id="player">
+        <div id="pb-time"></div>
+        <div id="play" onclick="playAudio()"><span id="play-text">PLAY</span></div>
+        <div id="pause" onclick="pauseAudio()"><span id="pause-text">PAUSE</span></div>
+        <div id="stop" onclick="stopAudio()"><span id="stop-text">STOP</span></div>
+    </div>
+</body>
+</html>
