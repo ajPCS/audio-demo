@@ -1,4 +1,4 @@
-
+//#bg is the audio element
     var bg = document.getElementById('bg');
 
     function playAudio() {
