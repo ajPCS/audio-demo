@@ -1,0 +1,72 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Helvetica, "sans-serif";
+}
+
+.container {
+  background-image: url("cak.9d8ead1c.jpeg");
+  background-size: cover;
+  width: 90vmin;
+  height: 90vmin;
+  margin: auto;
+}
+
+#rateDiv, #volDiv, #timeDiv {
+  float: left;
+  width: 33.3333%;
+  height: 100%;
+}
+
+#rateDiv {
+  background-color: #ff000046;
+}
+
+#volDiv {
+  background-color: #ffff0046;
+}
+
+#timeDiv {
+  background-color: #0000ff47;
+}
+
+#player {
+  text-align: center;
+  background-color: #fbfbd86d;
+  width: 100%;
+  height: 7.5%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#play, #pause, #stop {
+  display: inline-block;
+}
+
+#play-text, #pause-text, #stop-text {
+  font-size: 1.2em;
+  line-height: 10vh;
+}
+
+#play-text:hover, #pause-text:hover, #stop-text:hover {
+  color: #fff;
+  background-color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#play-text, #pause-text {
+  margin-right: 2em;
+}
+
+#pb-time {
+  background-color: #000;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  bottom: calc(12.5% - 12.5px);
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
